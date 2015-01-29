@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+
+<title>Matematicas</title>
+
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="../css/simple-sidebar.css" rel="stylesheet">
+    
+<link href="../css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="../js/katex/katex.min.css">
+<link href="../js/jquery-ui.min.css" rel="stylesheet">
+<link href="../js/slider-numbers/css/jquery-ui-slider-pips.css" rel="stylesheet">
+
+<script src="../js/jquery-2.1.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/basequiz.js"></script>
+<script src="../js/snap.min.js"></script>
+<script src="../js/katex/katex.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/slider-numbers/js/jquery-ui-slider-pips.js"></script>
+<script src="../js/init.js"></script>
+
+
+<script src="../js/mathfunctions.js"></script>
+ </head>
+
+<body>
+
+	 <div id="wrapper">
+     
+     	
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav"> 
+				<li class="sidebar-brand">
+					<a href="#">
+                      Menu
+					</a>
+				</li>
+			</ul>  
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+           
+           <!-- EBOOK CONTAINER -->
+           <div  class="ebook" data-next="NLC_TLR_M3.html">
+			<header class="main-header">
+    	Problemas relacionados a la recta numérica
+			</header>
+    
+    		<section class="content-section">
+    		
+       			<h2>La recta</h2>
+
+       			<p>
+              Es una representación geométrica del conjunto de los números reales. Consiste en una recta en la que se establece como punto de referencia el cero, la recta se extiende en ambas direcciones, los números positivos se ubican en un sentido (normalmente hacia la derecha) y los negativos en el otro (normalmente a la izquierda). Existe una correspondencia uno a uno entre cada punto de la recta y un número real.
+            </p>
+            
+              <div class="number-line"  ></div> 
+
+            <p>
+              Los problemas relacionados al empleo de la recta numérica generalmente consisten en hacer comparativos entre diferentes números reales. En una recta numérica, un número es mayor que otro si se encuentra a su derecha y viceversa. Por ejemplo: el número -1 es mayor que -5 por 4 unidades.
+            </p>
+            <label for="">Diferencia: </label> <input type="text" id='diference' style="width: 20px;" disabled>
+            <div class="number-line" id="interval" data-type="range" data-values="[-5, -1]"></div> 
+
+       		  <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+              <blockquote> Guía de Evaluación al ingreso de la Educación Superior Tecnológica 2004<br>
+   		  314 palabras</blockquote>
+          
+          <h2>Ejercicios:</h2>
+         
+            <article class="first multiplechoice usable">	
+        			<p><strong>1.</strong>  ¿Cuál de los siguientes números se encuentra entre los valores -<span class="frac"><sup>1</sup>&frasl;<sub>2</sub></span> y 3.14?</p>
+          			<ul>
+          				<li data-comments="">A.&emsp; -1</li> <br>
+              		<li data-comments="">B.&emsp; <span class="katex">-\frac{3}{4}</span></li> <br>
+              		<li role-success data-comments="lol">C.&emsp; <span class="katex">\frac{1}{4}</span></li> <br>
+              		<li data-comments="">D.&emsp;  <span class="katex">\sqrt{10}</span></li>  <br>
+          			</ul>
+      			</article>
+
+            <article>
+              <strong>2.</strong>   Ulises registró los puntos obtenidos de lunes a viernes en la Bolsa de Valores en un lapso de 3 semanas.
+              Cual es la ganancia de puntos obtenida en cada semana.
+              <div class="row">
+              <div class="col-md-12"><strong>Semana 1:</strong></div>
+              </div>
+              <div class="row open" data-ans="38">
+                <div class="col-md-2">+23</div>
+                <div class="col-md-2">-12</div>
+                <div class="col-md-2">+20</div>
+                <div class="col-md-2">-11</div>
+                <div class="col-md-2">+18</div>
+                <div class="col-md-2"><input type="text" class="form-control answer" placeholder="Total"></div>
+              </div>
+              <div class="row">
+              <div class="col-md-12"><strong>Semana 2:</strong></div>
+              </div>
+              <div class="row open" data-ans="-30">
+                <div class="col-md-2">-29</div>
+                <div class="col-md-2">+8</div>
+                <div class="col-md-2">-27</div>
+                <div class="col-md-2">+12</div>
+                <div class="col-md-2">+6</div>
+                <div class="col-md-2"> <input type="text" class="form-control answer" placeholder="Total"></div>
+              </div>
+              <div class="row">
+              <div class="col-md-12"><strong>Semana 3:</strong></div>
+              </div>
+              <div class="row open" data-ans="-31">
+                <div class="col-md-2">-12</div>
+                <div class="col-md-2">+22</div>
+                <div class="col-md-2">-21</div>
+                <div class="col-md-2">-13</div>
+                <div class="col-md-2">-7</div>
+                <div class="col-md-2"> <input type="text" class="form-control answer" placeholder="Total"></div>
+              </div>
+
+              <article class="multiplechoice usable"> 
+                <p>¿Cuál es la mayor ganancia de puntos obtenida en alguna de las 3 semanas?</p>
+                  <ul>
+                    <li role-success data-comments="">A. Semana 1</li> <br>
+                    <li data-comments="">B. Semana 2</li> <br>
+                    <li data-comments="">C. Semana 3</li> 
+                  </ul>
+              </article>
+            </article>
+
+            <article class="rectQuiz">
+              <p>
+                <strong>3.</strong>   Un ejército al iniciar un combate avanza 6 kilómetros cada noche y en el día retrocede 2 kilómetros. ¿A qué distancia del punto inicial se encuentra al finalizar el quinto día? <br>
+                <span>Marca tu respuesta en la recta</span>
+              </p>
+              <div class="number-line" data-min="0" data-max="24" data-ans="20"></div>
+              <button id="submit" >Marcar respuesta</button>
+            </article>
+
+              
+            <article>
+              <p>
+                <strong>4.</strong> En una fiesta de cumpleaños la animadora hace un juego con los niños en el que les da un minuto para comer una dona que cuelga frente a ellos, sin utilizar las manos. La animadora registra en fracciones el tiempo empleado por cada niño para comerse la dona y, con base en ello, premia a los cuatro primeros lugares. Ordene de menor a mayor el tiempo que tardaron los cuatro niños en comerse la dona para que la animadora otorgue los premios.
+                <br><br>
+                Los tiempos son :
+
+                <table class="table" style="text-align: center;">
+                  <thead>
+                    <tr>
+                      <th style="text-align: center;">Niño</th>
+                      <th style="text-align: center;">Tiempo</th>
+                    </tr>
+                  </thead>
+                  <tbody >
+                    <tr>
+                      <td>1</td>
+                      <td><span class="katex">\frac{5}{6}</span></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td><span class="katex">\frac{5}{8}</span></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td><span class="katex">\frac{5}{5}</span></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td><span class="katex">\frac{5}{7}</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <br> <br>
+
+                Ordene de menor a mayor el tiempo que tardaron los cuatro niños en comerse la dona para que la animadora otorgue los premios (coloque los tiempos en el orden correcto).
+              </p>
+                
+              <div class="row">
+                <div class="col-md-3 open" data-ans="5/5"><input type="text" class="form-control answer" placeholder="mayor"></div>
+                <div class="col-md-3 open" data-ans="5/6"><input type="text" class="form-control answer" placeholder='n/m'></div>
+                <div class="col-md-3 open" data-ans="5/7"><input type="text" class="form-control answer" placeholder='n/m'></div>
+                <div class="col-md-3 open" data-ans="5/8"><input type="text" class="form-control answer" placeholder='menor'></div>
+              </div>
+            </article>
+
+
+              <article class="multiplechoice usable">
+                <p>
+                  <strong>5.</strong>   En la ciudad de Monterrey se registraron, por cuatro días, las siguientes temperaturas en grados centígrados: -7°, -5°, 2°, 4°. ¿En cuál día se registró la temperatura que sobrepasaba los -6° pero estaba por debajo de los -3°?
+
+                  <ul>
+                    <li data-comments="">A. Primero</li> <br>
+                    <li role-success data-comments="">B. Segundo</li> <br>
+                    <li data-comments="">C. Tercero</li> <br>
+                    <li data-comments="">C. Cuarto</li> 
+                  </ul>
+                </p>
+              </article>
+
+
+            <article class="rectQuiz">
+              <p>
+                <strong>6.</strong>   La temperatura registrada en una ciudad a las 3 a.m. fue de -10 °C. Si para las 4 a.m. la temperatura descendio en una cantidad igual a la mitad de la temperatura registrada, ¿donde se ubica la temperatura registrada a las 4 a.m. en la recta? <br>
+                <span>Marca tu respuesta en la recta</span>
+              </p>
+              <div class="number-line" data-min="-15" data-max="15" data-ans="-15"></div>
+              <button id="submit" >Marcar respuesta</button>
+            </article>
+
+
+            <article class="multiplechoice usable">
+              <p>
+                <strong>7.</strong>   Identifique el número real que se encuentra entre &emsp;<span class="katex">-\sqrt{25} </span>&emsp;&emsp; y &emsp;&emsp;<span class="katex">\frac{4}{5} </span>
+
+                <ul>
+                  <li data-comments="">A.&emsp; -6</li> <br>
+                  <li role-success data-comments="">B.&emsp; -2</li> <br>
+                  <li data-comments="">C.&emsp; 5</li> <br>
+                  <li data-comments="">C.&emsp; 8</li> 
+                </ul>
+              </p>
+            </article>
+
+            <article class="multiplechoice usable">
+              <p>
+                <strong>8.</strong> En una asamblea vecinal se realizaron votaciones para elegir al representante de colonia. La fracción del total de votos que obtuvo cada uno de los cuatro candidatos postulados, se presenta en la siguiente tabla:
+
+                <table class="table" style="text-align: center;">
+                  <thead>
+                    <tr>
+                      <th style="text-align: center;">Candidato</th>
+                      <th style="text-align: center;">Fracci&oacute;n del total de votos recibidos</th>
+                    </tr>
+                  </thead>
+                  <tbody >
+                    <tr>
+                      <td>1</td>
+                      <td><span class="katex">\frac{2}{6}</span></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td><span class="katex">\frac{1}{7}</span></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td><span class="katex">\frac{3}{11}</span></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td><span class="katex">\frac{1}{4}</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <br> <br>
+
+                ¿Cuál de los cuatro candidatos obtuvo el primer lugar por la cantidad de votos que recibió?
+
+                <ul>
+                  <li role-success data-comments="">A.&emsp; 1</li> <br>
+                  <li data-comments="">B.&emsp; 3</li> <br>
+                  <li data-comments="">C.&emsp; 2</li> <br>
+                  <li data-comments="">C.&emsp; 4</li> 
+                </ul>
+              </p>
+            </article>
+
+
+
+            <article class="rectQuiz">
+              <p>
+                <strong>9.</strong>   Martha compró 2 metros de listón y utilizó solamente 5 retazos de 1/8 de metro cada uno. ¿Qué opción representa aproximadamente los metros de listón sobrantes? <br>
+                <span>Marca tu respuesta en la recta</span>
+              </p>
+              <div class="number-line" data-type='custom-labels' 
+                data-labels='["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1.0", "1.1", "1.2", "1.3", "1.4", "1.5"]'
+                data-value='0' data-ans='5'></div> 
+              <button id="submit" >Marcar respuesta</button>
+            </article>
+
+
+            <article>
+              
+            </article>
+
+
+            <article class="multiplechoice usable">
+              <p>
+                <strong>10.</strong> Una empresa de refrescos desea comprar una huerta de mango para elaborar su producto. De las opciones de compra se han sintetizado las siguientes características:
+
+                <table class="table" style="text-align: center;">
+                  <thead>
+                    <tr>
+                      <th style="text-align: center;">Huerta</th>
+                      <th style="text-align: center;">Periodo de producción</th>
+                      <th>Cantidad producida durante el periodo (miles)</th>
+                      <th>Cantidad de pulpa por mango</th>
+                    </tr>
+                  </thead>
+                  <tbody >
+                    <tr>
+                      <td>1</td>
+                      <td>Bimestral</td>
+                      <td>5</td>
+                      <td>50 g</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Anual</td>
+                      <td>15</td>
+                      <td>100 g</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Trimestral</td>
+                      <td>8</td>
+                      <td>50 g</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Semestral</td>
+                      <td>4</td>
+                      <td>100 g</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <br> <br>
+
+                Para obtener la mayor cantidad de pulpa al mes, ¿qué huerta conviene comprar?
+
+                <ul>
+                  <li role-success data-comments="">A.&emsp; 1</li> <br>
+                  <li data-comments="">B.&emsp; 3</li> <br>
+                  <li data-comments="">C.&emsp; 2</li> <br>
+                  <li data-comments="">C.&emsp; 4</li> 
+                </ul>
+              </p>
+            </article>
+            
+    	</section>        
+        
+    </div>
+    <!-- /EBOOK CONTAINER -->
+     
+           
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+	<footer class="main-footer">
+    </footer>
+    
+    <!-- Menu Toggle Script -->
+    <script>
+      	$(document).on("click","#menu-toggle",function(e){
+      	e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+      	});
+          
+  	    $('.change').click(function(){
+          $(this).attr('src', $(this).attr('data-change'));
+        });
+
+    </script>
+
+</body>
+</html>
