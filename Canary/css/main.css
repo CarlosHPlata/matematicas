@@ -181,6 +181,12 @@ article.first, article > article{
 input[type=text].answer{
 	color: black;
 }
+span>input[type=text].answer{
+	color: black;
+	float: none !important;
+	border: none;
+	border-bottom: 1px solid;
+}
 input[type=text].answer.bad{
 	color: black;
 	background-color: #FFB5B5;
