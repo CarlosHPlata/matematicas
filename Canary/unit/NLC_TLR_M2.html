@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+
+<title>Matematicas</title>
+
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="../css/simple-sidebar.css" rel="stylesheet">
+    
+<link href="../css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="../js/katex/katex.min.css">
+<link href="../js/jquery-ui.min.css" rel="stylesheet">
+<link href="../js/slider-numbers/css/jquery-ui-slider-pips.css" rel="stylesheet">
+
+<script src="../js/jquery-2.1.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/basequiz.js"></script>
+<script src="../js/snap.min.js"></script>
+<script src="../js/katex/katex.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/slider-numbers/js/jquery-ui-slider-pips.js"></script>
+<script src="../js/init.js"></script>
+
+
+<script src="../js/mathfunctions.js"></script>
+ </head>
+
+<body>
+
+	 <div id="wrapper">
+     
+     	
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav"> 
+				<li class="sidebar-brand">
+					<a href="#">
+                      Menu
+					</a>
+				</li>
+			</ul>  
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+           
+           <!-- EBOOK CONTAINER -->
+           <div  class="ebook" data-next="NLC_TLR_M3.html" data-prev="NLC_TLR_M1.html">
+			<header class="main-header">
+    	Problemas que involucran operaciones aritméticas básicas
+			</header>
+    
+    		<section class="content-section">
+    		
+       			<h2>operaciones aritméticas</h2>
+
+       			<p>
+              Es una representación geométrica del conjunto de los números reales. Consiste en una recta en la que se establece como punto de referencia el cero, la recta se extiende en ambas direcciones, los números positivos se ubican en un sentido (normalmente hacia la derecha) y los negativos en el otro (normalmente a la izquierda). Existe una correspondencia uno a uno entre cada punto de la recta y un número real.
+            </p>
+            
+              <div class="number-line"  ></div> 
+
+            <p>
+              Los problemas relacionados al empleo de la recta numérica generalmente consisten en hacer comparativos entre diferentes números reales. En una recta numérica, un número es mayor que otro si se encuentra a su derecha y viceversa. Por ejemplo: el número -1 es mayor que -5 por 4 unidades.
+            </p>
+            <label for="">Diferencia: </label> <input type="text" id='diference' style="width: 20px;" disabled>
+            <div class="number-line" id="interval" data-type="range" data-values="[-5, -1]"></div> 
+
+       		  <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+              <blockquote> Guía de Evaluación al ingreso de la Educación Superior Tecnológica 2004<br>
+   		  314 palabras</blockquote>
+          
+          
+            
+    	</section>        
+        
+    </div>
+    <!-- /EBOOK CONTAINER -->
+     
+           
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+	<footer class="main-footer">
+    </footer>
+    
+    <!-- Menu Toggle Script -->
+    <script>
+      	$(document).on("click","#menu-toggle",function(e){
+      	e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+      	});
+          
+  	    $('.change').click(function(){
+          $(this).attr('src', $(this).attr('data-change'));
+        });
+
+    </script>
+
+</body>
+</html>

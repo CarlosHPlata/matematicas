@@ -71,15 +71,18 @@
 		    })
 		    .slider("pips", {
 		        rest: "label",
-		        step: 10 
+		        step: 5 
 		    });
 
 		$(rect).find('.ui-slider-label').each(function () {
 			value = $(this).html();
-			value = parseInt(value)/10;
-			$(this).html(value);
+			if (parseInt($(this).attr('data-value'))%10 == 0) {
+				value = parseInt(value)/10;
+			} else {
+				value = "";
+			}
+			$(this).html(value);	
 		});
-		alert($(rect).find('.ui-slider-label').attr('data-value'));		
 	}
 
 	function customLabelsLineNumber(rect){
@@ -158,19 +161,43 @@ $(document).ready(function(){
 		_after.insertAfter($(this));
 
 		var rect = $(this).find(".number-line").children();
-		var resp = parseInt($(this).find(".number-line").attr('data-ans'));
+
+		var type = $(this).find(".number-line").hasAttr('data-ans')? 0: 1;
+		var resp;
+		if (type == 0){
+			resp = parseInt($(this).find(".number-line").attr('data-ans'));
+		} else {
+			resp = JSON.parse($(this).find(".number-line").attr('data-opt'));
+		}
+		
 
 		$(this).find( "#submit" ).click( function () {
-			if (rect.slider('value') == resp){
-				_after.attr( "class", "success-log" );		
-				_message.text("Respuesta correcta");
-				_after.show();
+			if (type == 0){
+				if (rect.slider('value') == resp){
+					_after.attr( "class", "success-log" );		
+					_message.text("Respuesta correcta");
+					_after.show();
+				}
+				else{
+					_message.text("Respuesta incorrecta");
+					_after.attr( "class", "error-log" );
+					_after.show();
+				}
+			} else {
+				min = resp[0];
+				max = resp[1];
+				if (rect.slider('value') <= max && rect.slider('value') >= min){
+					_after.attr( "class", "success-log" );		
+					_message.text("Respuesta correcta");
+					_after.show();
+				}
+				else{
+					_message.text("Respuesta incorrecta");
+					_after.attr( "class", "error-log" );
+					_after.show();
+				}
 			}
-			else{
-				_message.text("Respuesta incorrecta");
-				_after.attr( "class", "error-log" );
-				_after.show();
-			}
+			
 		});
 	});
 

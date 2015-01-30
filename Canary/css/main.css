@@ -189,3 +189,10 @@ input[type=text].answer.good{
 	color: black;
 	background-color: #B1F2B8;
 }
+article>p>span{
+	font-size: 12px;
+	color: #8C8C8C;
+}
+span.katex{
+	color: black;
+}
