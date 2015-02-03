@@ -202,3 +202,6 @@ article>p>span{
 span.katex{
 	color: black;
 }
+thead{
+	font-weight: bold;
+}
