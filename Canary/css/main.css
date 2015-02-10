@@ -3,7 +3,9 @@
  * Camilo Medina Matu
  * dev.cmedina@gmail.com
  */
-
+th{
+	text-align: center!!important;
+}
 body{ margin:0; padding:0; background-color:#f2f2f2; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
 html{ margin:0; padding:0;}
 a{ text-decoration:none;}

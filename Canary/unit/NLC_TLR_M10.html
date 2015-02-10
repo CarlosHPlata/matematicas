@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+
+<title>Matematicas</title>
+
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="../css/simple-sidebar.css" rel="stylesheet">
+    
+<link href="../css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="../js/katex/katex.min.css">
+<link href="../js/jquery-ui.min.css" rel="stylesheet">
+<link href="../js/slider-numbers/css/jquery-ui-slider-pips.css" rel="stylesheet">
+
+<script src="../js/jquery-2.1.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/basequiz.js"></script>
+<script src="../js/snap.min.js"></script>
+<script src="../js/katex/katex.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/slider-numbers/js/jquery-ui-slider-pips.js"></script>
+<script src="../js/init.js"></script>
+
+
+<script src="../js/mathfunctions.js"></script>
+ </head>
+
+<body>
+
+	 <div id="wrapper">
+     
+     	
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav"> 
+				<li class="sidebar-brand">
+					<a href="#">
+                      Menu
+					</a>
+				</li>
+			</ul>  
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+           
+           <!-- EBOOK CONTAINER -->
+           <div  class="ebook" data-next="NLC_TLR_M11.html" data-prev="NLC_TLR_M9.html">
+			<header class="main-header">
+    	Resolución de Sistema de Ecuaciones Lineales (ecuaciones de primer grado)
+			</header>
+    
+
+    		<section class="content-section">
+    		
+       			<h2>Resolución de Sistema de Ecuaciones Lineales (ecuaciones de primer grado)</h2>
+
+       			<p>
+            No es recomendable resolverlas cuando se dan varias opciones por respuesta (demasiado tiempo invertido).
+            </p>
+            <p>Es más sencillo comprobar cuál de las respuestas satisface al sistema de ecuaciones</p>
+            <p>¿Cuándo se dice que los valores satisfacen un sistema de ecuaciones?</p>
+            <p>Ejemplo: <strong>x=1 e y=3</strong> satisfacen las ecuaciones:</p>
+            <p>&emsp;&emsp;<strong>2x+3y-11=0 y x-2y+5=0</strong> porque:</p>
+            <p>&emsp;&emsp;<strong>2(1)+3(3)-11=0 y 1-2(3)+5=0</strong></p>
+
+
+            <p><strong>Ejemplo</strong> donde debe determinarse el sistema de ecuaciones</p>
+
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <p>
+                 La cantidad de dinero que tienen Manuel (m), y Erika (e) suma $45; la diferencia de lo que tiene Manuel con el doble de lo que tiene Erika da $21. ¿Cuánto tiene cada uno?
+                 Determinando el sistema de ecuaciones: m+e=45 m-2e=21
+                  <ul>
+                      <li role-success data-comments="">A.&emsp;m = $33, e = $12 </li>
+                      <li data-comments="">B.&emsp;m = $35, e = $10</li>
+                      <li data-comments="">C.&emsp;m = $37, e = $8</li>
+                      <li data-comments="">D.&emsp;m = $39, e = $8</li>
+                    </ul>
+                </p>
+              </div>
+            </div>
+
+          <p>En el caso en que sea necesario, el sistema de ecuaciones simultáneas puede resolverse por los diferentes métodos (Reducción, igualación, sustitución, determinantes) estudiados en el curso de Algebra. Por ejemplo, resolviendo el ejercicio anterior por el método de reducción.</p>
+
+          <p>m +e = 45 <strong>( Ecuacion 1)</strong></p>
+          <p>m - 2e = 21 <strong>(ecuancion 2)</strong></p>
+
+          <ol>
+            <li>
+              Se determina cual es la incógnita que puede ser eliminada de una forma más sencilla al sumar o restar ambas ecuaciones. En éste caso los coeficientes de m son iguales por lo que basta multiplicar una de las dos ecuaciones por -1 <br>
+              Ecuación 1 multiplicada por -1: <span class="katex">-m -e = -45</span> <strong>(ecuacion 1  multiplicada) </strong>
+            </li><br><br>
+
+            <li>
+              Se suman ambas ecuaciones para que se elimine la incógnita m. <br>
+                <div class="row">
+                  <div class="col-md-3 col-md-offset-4">
+                    <span class="katex">
+                      -m -e \ \ = -45
+                    </span> <br>
+                    <span class="katex" style="padding-left: 12px">
+                      \ m -2e = 21
+                    </span>
+                    <hr style="border-top: solid 1px black;">
+                    <div class="katex" style="padding-left: 40px;">
+                      -3e = -24
+                    </div>
+                  </div>
+                </div>
+            </li> <br> <br>
+
+            <li>
+              Despejando, se obtiene el valor de e: <br>
+              <span class="katex">e=8</span>
+            </li> <br> <br>
+
+            <li>
+              Al sustituir e=8 en cualquiera de las dos ecuaciones se obtiene el valor de m. <br>
+              Sustituyendo e=8 en ecuación 2:
+              <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                  <span class="katex">
+                    m - 2e = 21
+                  </span> <br>
+                  <span class="katex">
+                    m -2(8) = 21
+                  </span> <br>
+                  <span class="katex">
+                    m - 16 = 21
+                  </span>
+                  <br>
+                  <span class="katex">
+                    m = 21 + 16 = 37
+                  </span>
+                  <br>
+                  <span class="katex">
+                    m = 37
+                  </span>
+                  <br>
+                </div>
+              </div>
+              La solución al sistema de ecuaciones es: e=8 y m=37 <br> Se puede comprobar la solución sustituyendo ambos valores en las dos ecuaciones.
+            </li>
+          </ol>
+
+             <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+              <blockquote> Guía de Evaluación al ingreso de la Educación Superior Tecnológica 2004<br>
+        314 palabras</blockquote>
+          
+          <h2>Ejercicios</h2>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>1. </strong>
+            ¿Cuál es la solución del siguiente sistema de ecuaciones lineales?<br>
+
+            x+y=15 
+            <br>
+            3x-2y=20
+            <br><br>
+
+              <ul>
+                  <li role-success data-comments="">A.&emsp;x = 5, y = 10</li><br><br>
+                  <li data-comments="">B.&emsp;x = 7, y = 8</li> <br><br>
+                  <li data-comments="">C.&emsp;x = 8, y = 7</li> <br><br>
+                  <li data-comments="">D.&emsp;x = 10, y = 5</li>
+                </ul>
+            </p>
+
+          </article>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>2. </strong>
+           En un examen de 40 preguntas, Diego ha obtenido 7 de calificación. Si cada acierto vale 1 punto y cada error le resta 2 puntos, ¿cuál es la representación algebraica de la situación planteada?
+            
+              <ul>
+                  <li role-success data-comments="">A.&emsp;x+y=40  <br>   3x-2y=10</li><br><br>
+                  <li data-comments="">B.&emsp;x+y+24  <br>   x-4y=16</li> <br><br>
+                  <li data-comments="">C.&emsp;x+y=33  <br>  x-2y=8  </li> <br><br>
+                  <li data-comments="">D.&emsp;x+y=40  <br>  x-2y=7</li>
+                </ul>
+            </p>
+
+          </article>
+
+           <article class="multiplechoice usable">
+            <p>
+            <strong>3. </strong>
+          ¿Cuál es el valor de x y w en el siguiente sistema de ecuaciones? <br>
+
+          <span class="katex">\frac{x}{2} + \frac{w}{3} =0</span> <br>
+          <span class="katex">2x+\frac{w}{2}=  -15</span><br><br>
+
+
+            
+              <ul>
+                  <li role-success data-comments="">A.&emsp;x = -60, w = 90</li><br>
+                  <li data-comments="">B.&emsp;x = -12, w = 18</li> <br>
+                  <li data-comments="">C.&emsp;x = 12, w = -18</li> <br>
+                  <li data-comments="">D.&emsp;x = -60, w = -90</li>
+                </ul>
+            </p>
+
+          </article>
+
+           <article class="multiplechoice usable">
+            <p>
+            <strong>4. </strong>
+          
+
+         Luis y Hugo caminaban juntos llevando sacos de igual peso. Si Luis tomara un saco de Hugo, su carga sería el doble que la de Hugo. En cambio, si Hugo tomara un saco de Luis, sus cargas se igualarían. ¿Cuántos sacos lleva Hugo y cuántos Luis?
+            
+              <ul>
+                  <li role-success data-comments="">A.&emsp;Luis 7 y Hugo 5</li><br>
+                  <li data-comments="">B.&emsp;Luis 4 y Hugo 6</li> <br>
+                  <li data-comments="">C.&emsp;Luis 3 y Hugo 2</li> <br>
+                  <li data-comments="">D.&emsp;Luis 3 y Hugo 5</li>
+                </ul>
+            </p>
+
+          </article>
+
+           </article>
+
+           <article class="multiplechoice usable">
+            <p>
+            <strong>5. </strong>
+              Un comerciante tiene $50.00 y desea adquirir 20 artículos de papelería entre cuadernos (c) y bolígrafos (b), si el costo de cada cuaderno es de $7.00 y de cada bolígrafo de $3.00, el sistema de ecuaciones que representa dicho problema es:
+            
+              <ul>
+                  <li role-success data-comments="">A.&emsp;c + b =20 <br> 3c + 7b =50   </li><br>
+                  <li data-comments="">B.&emsp;c + b =20  <br>  7c + 3b =50</li> <br>
+                  <li data-comments="">C.&emsp;c + b =50  <br>   7c + 3b =20</li> <br>
+                  <li data-comments="">D.&emsp;c + b =50  <br>  3c + 7b =20</li>
+                </ul>
+            </p>
+
+          </article>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>6. </strong>
+             ¿Cuál es el valor de x del siguiente sistema de ecuaciones simultáneas?<br>
+             2x + y = 7 <br>
+             5x - 3y = 1 <br><br>
+            
+              <ul>
+                  <li role-success data-comments="">A.&emsp;x = 2</li><br>
+                  <li data-comments="">B.&emsp;x = 3</li> <br>
+                  <li data-comments="">C.&emsp;x = 4</li> <br>
+                  <li data-comments="">D.&emsp;x = 5</li>
+                </ul>
+            </p>
+
+          </article>
+
+           </article>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>7. </strong>
+            Karla compra 1 chocolate y 2 paletas con $4, Lorena compra 3 chocolates y 1 paleta con $7, al llegar a casa su mamá les pregunta, ¿cuál es el costo de cada producto? Chocolate ____ y paleta ____
+            
+              <ul>
+                  <li role-success data-comments="">A.&emsp;$1, $2</li><br>
+                  <li data-comments="">B.&emsp;$2, $1</li> <br>
+                  <li data-comments="">C.&emsp;$4, $2</li> <br>
+                  <li data-comments="">D.&emsp;$3, $1</li>
+                </ul>
+            </p>
+
+          </article>
+
+           <article class="multiplechoice usable">
+            <p>
+            <strong>8. </strong>
+           La edad de Sergio (s) es la mitad de la edad de Pedro (p). Si ambas edades suman 45 años, ¿cuál es la representación algebraica que permite obtener las edades de ambos?
+              <ul>
+                  <li role-success data-comments="">A.&emsp;2s-p=0 <br>  s+p=45</li><br>
+                  <li data-comments="">B.&emsp;<span class="katex">s+\frac{p}{2}=0</span>  <br>  s-p=45</li> <br>
+                  <li data-comments="">C.&emsp;2s+p=0  <br> s-p=45</li> <br>
+                  <li data-comments="">D.&emsp;<span class="katex">\frac{s}{2} -p=0</span>  <br>  s+p=45</li>
+                </ul>
+            </p>
+
+          </article>
+
+           <article class="multiplechoice usable">
+            <p>
+            <strong>9. </strong>
+          ¿Cuál es la ecuación equivalente de la siguiente expresión algebraica? <br>
+           9x+7y=4 <br> <br>
+
+              <ul>
+                  <li role-success data-comments="">A.&emsp;7x+9y=4</li><br>
+                  <li data-comments="">B.&emsp;9x-7y=4</li> <br>
+                  <li data-comments="">C.&emsp;28x-36y=16</li> <br>
+                  <li data-comments="">D.&emsp;36x+28y=16</li>
+                </ul>
+            </p>
+
+          </article>
+
+           <article class="multiplechoice usable">
+            <p>
+            <strong>10. </strong>
+          En una fiesta hay 7 hombres menos que las mujeres presentes. Si los hombres sólo saludan a las mujeres habrá 1,248 saludos. ¿Cuántas mujeres hay en la fiesta?
+           
+              <ul>
+                  <li role-success data-comments="">A.&emsp;32</li><br>
+                  <li data-comments="">B.&emsp;39</li> <br>
+                  <li data-comments="">C.&emsp;178</li> <br>
+                  <li data-comments="">D.&emsp;185</li>
+                </ul>
+            </p>
+
+          </article>
+
+ </section>        
+        
+    </div>
+    <!-- /EBOOK CONTAINER -->
+     
+           
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+  <footer class="main-footer">
+    </footer>
+    
+    <!-- Menu Toggle Script -->
+    <script>
+        $(document).on("click","#menu-toggle",function(e){
+        e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+        });
+          
+        $('.change').click(function(){
+          $(this).attr('src', $(this).attr('data-change'));
+        });
+
+    </script>
+
+</body>
+</html>
+

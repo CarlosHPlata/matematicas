@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+
+<title>Matematicas</title>
+
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="../css/simple-sidebar.css" rel="stylesheet">
+    
+<link href="../css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="../js/katex/katex.min.css">
+<link href="../js/jquery-ui.min.css" rel="stylesheet">
+<link href="../js/slider-numbers/css/jquery-ui-slider-pips.css" rel="stylesheet">
+
+<script src="../js/jquery-2.1.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/basequiz.js"></script>
+<script src="../js/snap.min.js"></script>
+<script src="../js/katex/katex.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/slider-numbers/js/jquery-ui-slider-pips.js"></script>
+<script src="../js/init.js"></script>
+
+
+<script src="../js/mathfunctions.js"></script>
+ </head>
+
+<body>
+
+   <div id="wrapper">
+     
+      
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav"> 
+        <li class="sidebar-brand">
+          <a href="#">
+                      Menu
+          </a>
+        </li>
+      </ul>  
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+           
+           <!-- EBOOK CONTAINER -->
+           <div  class="ebook" data-next="NLC_TLR_M13.html" data-prev="NLC_TLR_11.html">
+      <header class="main-header">
+      Problemas sobre diagonales de Polígonos.
+      </header>
+    
+
+        <section class="content-section">
+        
+            <h2>Problemas sobre diagonales de Polígonos.</h2>
+
+            <p>
+           A partir de un vértice de un polígono de n lados, se pueden trazar n-3 diagonales (no puede trazarse diagonales a los vértices consecutivos y al vértice mismo.
+            </p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th style="text-align: center">Numero de vértices</th>
+                      <th style="text-align: center">diagonales</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>3 (Triangulo)</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>4 (Cuadrilatero)</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>5 (Pentágono)</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>6 (Hexágono)</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>n</td>
+                      <td>n-3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-6">
+                <img src="../img/12-1.jpg" class="center-block img-responsive">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 col-md-offset-5 math-example">
+                <span class="katex">d = n - 3</span>
+              </div>
+            </div>
+
+            <p>
+              El número de diagonales totales (las que pueden trazarse entre todos los vértices se obtiene al multiplicar el número de diagonales desde un vértice por el numero de vértices y dividiendo el resultado por dos (puesto que como cada diagonal une dos vértices, al contarlas desde cada vértice se duplica el conteo).
+            </p>
+
+            <div class="row">
+              <div class="col-md-4 col-md-offset-5 math-example">
+                <span class="katex">D = \frac{n(n-3)}{2}</span>
+              </div>
+            </div>
+
+            <p>
+              Por ejemplo en un hexágono se pueden trazar 3 diagonales desde un vértice y 9 diagonales totales. <br>
+              Para un hexágono: n=6 <br>
+              Diagonales desde un vértice: d=6-3=3 <br>
+              Diagonales totales:
+            </p>
+
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4 math-example">
+                <span class="katex">D = \frac{6(6-3)}{2} = \frac{6(3)}{2} = 9</span>
+              </div>
+            </div>
+
+
+             <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+              <blockquote> Guía de Evaluación al ingreso de la Educación Superior Tecnológica 2004<br>
+        314 palabras</blockquote>
+          
+          <h2>Ejercicios</h2>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>1. </strong>
+            En la clase de Matemáticas II, el profesor mostró la siguiente tabla, en la cual n representa los lados de un polígono y D el total de diagonales que se pueden trazar en sus vértices.
+
+              <table class="table">
+                <tbody>
+                    <tr>
+                      <td><strong>n</strong></td>
+                      <td>4</td>
+                      <td>6</td>
+                      <td>8</td>
+                      <td>10</td>
+                      <td>12</td>
+                      <td>14</td>
+                    </tr>
+                    <tr>
+                      <td><strong>D</strong></td>
+                      <td>2</td>
+                      <td>9</td>
+                      <td>20</td>
+                      <td>35</td>
+                      <td>54</td>
+                      <td>77</td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              ¿Cuál es el número de diagonales que se pueden trazar en un polígono de 18 lados?
+
+              <ul>
+                  <li role-success data-comments="">A.&emsp;96</li><br><br>
+                  <li data-comments="">B.&emsp;104</li> <br><br>
+                  <li data-comments="">C.&emsp;135</li> <br><br>
+                  <li data-comments="">D.&emsp;170</li>
+                </ul>
+            </p>
+
+          </article>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>2. </strong>
+            Si se corta por las líneas punteadas al hexágono, como se muestra en la figura,
+
+            <img src="../img/12-2.jpg" class="center-block img-responsive">
+
+            ¿Cuántas diagonales internas se pueden trazar en la figura resultante?
+
+              <ul>
+                  <li role-success data-comments="">A.&emsp;2</li><br><br>
+                  <li data-comments="">B.&emsp;4</li> <br><br>
+                  <li data-comments="">C.&emsp;5</li> <br><br>
+                  <li data-comments="">D.&emsp;9</li>
+                </ul>
+            </p>
+
+          </article>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>3. </strong>
+            Si se corta por las líneas punteadas al octágono, como se muestra en la figura, ¿cuántas diagonales internas se pueden trazar en la figura resultante?
+
+            <img src="../img/12-3.jpg" class="center-block img-responsive">
+
+              <ul>
+                  <li role-success data-comments="">A.&emsp;9</li><br><br>
+                  <li data-comments="">B.&emsp;14</li> <br><br>
+                  <li data-comments="">C.&emsp;20</li> <br><br>
+                  <li data-comments="">D.&emsp;27</li>
+                </ul>
+            </p>
+
+          </article>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>4. </strong>
+            Si se corta por las líneas punteadas al heptágono, como se muestra en la figura, ¿cuántas diagonales internas se pueden trazar en la figura resultante?
+
+            <img src="../img/12-4.jpg" class="center-block img-responsive">
+
+              <ul>
+                  <li role-success data-comments="">A.&emsp;18</li><br><br>
+                  <li data-comments="">B.&emsp;20</li> <br><br>
+                  <li data-comments="">C.&emsp;27</li> <br><br>
+                  <li data-comments="">D.&emsp;35</li>
+                </ul>
+            </p>
+
+          </article>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>5. </strong>
+            Si se hace un corte recto por los puntos B y E de la siguiente figura, ¿cuántas diagonales tiene la figura resultante con mayor número de vértices?
+            <img src="../img/12-5.jpg" class="center-block img-responsive">
+
+              <ul>
+                  <li role-success data-comments="">A.&emsp;4</li><br><br>
+                  <li data-comments="">B.&emsp;6</li> <br><br>
+                  <li data-comments="">C.&emsp;14</li> <br><br>
+                  <li data-comments="">D.&emsp;28</li>
+                </ul>
+            </p>
+
+          </article>
+
+          <article class="multiplechoice usable">
+            <p>
+            <strong>6. </strong>
+            Se corta la siguiente figura con una línea recta de A a B.
+            <img src="../img/12-6.jpg" class="center-block img-responsive">
+            ¿Cuántas diagonales se pueden trazar en la figura más grande?
+
+              <ul>
+                  <li role-success data-comments="">A.&emsp;3</li><br><br>
+                  <li data-comments="">B.&emsp;5</li> <br><br>
+                  <li data-comments="">C.&emsp;6</li> <br><br>
+                  <li data-comments="">D.&emsp;9</li>
+                </ul>
+            </p>
+
+          </article>
+
+
+ </section>        
+        
+    </div>
+    <!-- /EBOOK CONTAINER -->
+     
+           
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+  <footer class="main-footer">
+    </footer>
+    
+    <!-- Menu Toggle Script -->
+    <script>
+        $(document).on("click","#menu-toggle",function(e){
+        e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+        });
+          
+        $('.change').click(function(){
+          $(this).attr('src', $(this).attr('data-change'));
+        });
+
+    </script>
+
+</body>
+</html>
